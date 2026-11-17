@@ -1,9 +1,9 @@
-# STRIPSLab
+# Strips planning
 
 STRIPSLab compares real and delete-relaxed plans for small positive STRIPS tasks,
 using independent Python and JavaScript implementations. Inspect every state, every blocked/applicable action, every shortest-plan choice and every delete-relaxation failure witness. No model, API or runtime package dependency.
 
-[Live inspector](https://midya8.github.io/stripslab/) | [Method and prior work](METHOD.md)
+[Live inspector](https://midya8.github.io/strips-planning/) | [Method and prior work](METHOD.md)
 
 ## Choose a calculation
 
@@ -62,7 +62,7 @@ Established planning theory, original bounded implementation and synthetic tasks
 
 ## Search: suboptimal h-add example
 
-[Live search inspector](https://midya8.github.io/stripslab/search.html) | [Search method and sources](SEARCH.md)
+[Live search inspector](https://midya8.github.io/strips-planning/search.html) | [Search method and sources](SEARCH.md)
 
 Keep the complete state audit and compare zero/h-max/h-add/exact-h-plus search ordering. Inspect every valid frontier, selected label, applicable-action improvement, reopening, returned replay and termination. A new original control returns a three-action h-add plan when the real optimum is two. Exact h-plus is a full relaxed-graph oracle; all estimates are precomputed, so expansion counts are not runtime-speed measurements. Fixed ascending f/g/state-mask ties, goal-pop termination and strict g improvements are explicit.
 
@@ -76,7 +76,7 @@ stripslab --search examples/task.json -o search-audit.json
 
 ## Static action availability
 
-[Availability inspector](https://midya8.github.io/stripslab/sensitivity.html) | [Policy, controls and sources](SENSITIVITY.md)
+[Availability inspector](https://midya8.github.io/strips-planning/sensitivity.html) | [Policy, controls and sources](SENSITIVITY.md)
 
 A representative action is not automatically necessary. Enumerate every static action subset and distinguish representative use, necessity for the baseline optimum and necessity for any successful plan. Retain all minimal sufficient sets and all minimal solvability/optimality cuts, with every counterfactual distance, exact plan count, representative and optimal edge. Eighteen controls cover 466 scenarios and 21,731 state rows. Independent Python BFS and JavaScript distance sweeps reproduce complete reports. No probabilities, timed outages or real-world reliability score.
 
