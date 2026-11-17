@@ -1,6 +1,6 @@
 # Strips planning
 
-STRIPSLab compares real and delete-relaxed plans for small positive STRIPS tasks,
+This implementation compares real and delete-relaxed plans for small positive STRIPS tasks,
 using independent Python and JavaScript implementations. Inspect every state, every blocked/applicable action, every shortest-plan choice and every delete-relaxation failure witness. No model, API or runtime package dependency.
 
 [Live inspector](https://midya8.github.io/strips-planning/) | [Method and prior work](METHOD.md)
